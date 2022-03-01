@@ -2,14 +2,13 @@
 
 class AppleTree {
     // constructor
-    constructor(tree_name,tree_age,tree_height,treeMatrueAge,treeHealthStatus,treeLimitAge,treeStopAge) {
-        this._name = tree_name;
+    constructor(tree_age,tree_height,treeMatrueAge,treeHealthStatus,treeLimitAge,treeStopAge) {
         this._age = tree_age;
         this._height = tree_height;
         this._fruits = [];
         this.harvested = '';
         this._healthStatus = treeHealthStatus;
-        this._MatrueAge = treeMatrueAge;;
+        this._MatrueAge = treeMatrueAge;
         this._limitAge = treeLimitAge;
         this._stopAge = treeStopAge;
     }
@@ -54,14 +53,10 @@ class AppleTree {
 
     // grow
     grow() {
-        this._age++;
-        /*
-         * buatlah sebuah kondisi jika kalau umur pohon lebih besar atau sama dengan dari limit umur limit-nya maka pohon tidak sehat
-         * jika umur pohon lebih kecil dari umur pohon berhenti tumbuh, maka pohon bertambah tinggi secara random
-         * tinggi pohon dibulatkan ke bulatan terbesar
-        */
-        
+        let addingHeight = 0;
     }
+
+    
 
     // produce some fruits
     produceFruits() {
@@ -70,6 +65,7 @@ class AppleTree {
           * buat kelas buah di luar kelas pohon
           * hasil buah akan disimpan di dalam seperti fruit
         */
+       
     }
     
     // get some fruit
